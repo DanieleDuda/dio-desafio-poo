@@ -2,6 +2,7 @@ import java.time.LocalDate;
 
 import br.com.dio.dominio.Curso;
 import br.com.dio.dominio.Mentoria;
+import br.com.dio.dominio.Conteudo;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -24,6 +25,13 @@ public class Main {
         mentoria1.setData(LocalDate.now());
 
         System.out.println(mentoria1);
+
+        Conteudo cursoC = new Curso();
+        cursoC.setTitulo("Curso C - Polimorfismo");
+        cursoC.setDescricao("Instanciou um objeto do tipo Conteudo usando a classe Curso");
+        
+        System.out.println("Conteudo: " + cursoC);
+
     }
 
 }
